@@ -10,16 +10,17 @@ st.set_page_config(
     layout='wide'
     )
 
+st.title('Prediction History')
 
-
-def show_historic_prediction():
+def show_historic_predictions():
  
  
-    csv_path = "./data/history.csv"
+    csv_path = "./data/History.csv"
     df = pd.read_csv(csv_path)
  
     return df
     
  
 if __name__ == "__main__":
-    df = show_historic_prediction()
+ df = show_historic_predictions()
+ st.dataframe(df)

@@ -302,22 +302,9 @@ session_state = SessionState(authenticated=False, form_state={
     "new_password": "",
     "confirm_password": ""
 })
-
-# Home page function
-# def home_page():
-#     st.title('Welcome to Telecommunications Customer Churn Prediction App')
-    # st.markdown("""
-    # Losing customers is a major cost for any organization. Customer churn, also known as customer attrition or customer turnover, is the percentage of customers who stop using your company’s product or service within a certain period of time.
     
-    # For example, if you started the year with 500 customers and ended with 480 customers, your customer churn rate would be 4%.
-    
-    # If we could understand the reasons and the timing of customer churn with reasonable accuracy, it would greatly help the organization to plan and implement effective retention strategies.
-
-    # This is a Classification project aimed at assisting a telecommunications company understand their data and find the life time value of each customer and know what factors affect the rate at which customers stop using their network.
-    # """)
-    
-    # # Add image
-    # st.image("Images/Global Telecommunications Network.jpg", caption="Telecommunications Logo", use_column_width=True)
+    # Add image
+st.image("Images/Global Telecommunications Network.jpg", caption="Telecommunications Logo", use_column_width=True)
 
 # Logout function
 def logout():
@@ -332,6 +319,30 @@ def login():
         session_state.authenticated = True
     else:
         st.error("Login failed: Incorrect username or password.")
+
+# # Check if the user is authenticated
+# if not st.session_state.get("authentication_status"):
+#     st.info('Login from the Home page to use app')
+# else:
+#     #Set page title
+#     st.markdown('### Proprietory Data from IBM 🛢️'
+
+
+
+# with open('./config.yaml') as file:
+#     config = yaml.load(file, Loader=SafeLoader)
+ 
+# authenticator = stauth.Authenticate(
+#     config['credentials'],
+#     config['cookie']['name'],
+#     config['cookie']['key'],
+#     config['cookie']['expiry_days'],
+#     config['preauthorized']
+# )
+ 
+ 
+# name, authentication_status, username = authenticator.login(location='sidebar')
+
 
 # Create Account function
 def create_account():

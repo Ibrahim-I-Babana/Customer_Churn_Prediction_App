@@ -299,16 +299,6 @@ df = pd.read_csv(dataset_path)
 #Display dashboard image
 # st.image("Images/Customer_Churn_Prediction_Dasboard.png", caption="Telecommunications Customer Churn Prediction Dashboard", use_column_width=True)
 st.title('Telecommunications Customer Churn Dashboard')
-
-# #Display dashboard image
-# st.image("Images/Customer_Churn_Prediction_Dasboard.png", caption="Telecommunications Customer Churn Prediction Dashboard", use_column_width=True)
-
- 
-# # Set page title
-# st.set_page_config(page_title="Visualization Dashboard")
- 
-# # Title for the page
-# st.title("Visualization Dashboard")
  
 # Sidebar navigation
 option = st.sidebar.selectbox(
@@ -318,7 +308,7 @@ option = st.sidebar.selectbox(
  
 if option == 'Analytics Dashboard':
     # Research question 1: Distribution of churn for different Internet service types
-    st.write("Research question 1: Distribution of churn for different Internet service types")
+    st.markdown("**Research question 1: What is the distribution of churn for different Internet service types**")
  
     # Using Plotly Express
     fig = px.bar(df, x='InternetService', color='Churn', barmode='group',
@@ -330,7 +320,7 @@ if option == 'Analytics Dashboard':
     st.plotly_chart(fig)
  
     # Research question 2: Impact of having a partner or dependents on customer churn
-    st.write("Research question 2: Impact of having a partner or dependents on customer churn")
+    st.markdown("**Research question 2: What is the impact of having a partner or dependents on customer churn**")
  
     # Using Altair
     partner_chart = alt.Chart(df).mark_bar().encode(
@@ -352,7 +342,7 @@ if option == 'Analytics Dashboard':
     st.altair_chart(dependents_chart, use_container_width=True)
  
     # Research question 3: Influence of contract type on customer churn
-    st.header("Research question 3: Influence of contract type on customer churn")
+    st.markdown("**Research question 3: What is the influence of contract type on customer churn**")
  
     # Using Plotly Express
     fig2 = px.histogram(df, x='Contract', color='Churn', barmode='group')
@@ -360,7 +350,7 @@ if option == 'Analytics Dashboard':
     st.plotly_chart(fig2, use_container_width=True)
  
     # Research question 4: Impact of billing preference on customer churn
-    st.header("Research question 4: Impact of billing preference on customer churn")
+    st.markdown("**Research question 4: What is the impact of billing preference on customer churn**")
  
     # Convert 'Churn' column to boolean (0 for No, 1 for Yes)
     df['Churn'] = df['Churn'].map({'No': 0, 'Yes': 1})
@@ -390,7 +380,7 @@ if option == 'Analytics Dashboard':
     st.header("Additional Research Questions")
  
     # Research question 6: Impact of tenure on customer churn
-    st.header("Research question 6: What is the impact of tenure on customer churn")
+    st.markdown("**Research question 6: What is the impact of tenure on customer churn**")
  
     # Plot using Plotly Express
     fig = px.histogram(df, x='tenure', color='Churn', nbins=20,
@@ -399,7 +389,7 @@ if option == 'Analytics Dashboard':
     st.plotly_chart(fig)
  
     # Research question 7: Relationship between total charges and churn
-    st.subheader("Research question 7: Relationship between total charges and churn")
+    st.markdown("**Research question 7: What is the relationship between total charges and churn**")
     charges_churn_scatter = alt.Chart(df).mark_circle(size=60).encode(
         x='TotalCharges',
         y='Churn',

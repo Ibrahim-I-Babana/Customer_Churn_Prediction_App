@@ -259,8 +259,8 @@ def display_descriptive_statistics(df):
     st.write("#### Dataset Info:")
     st.write(df.info())
 
-# Add the image
-st.image('Images/Global Telecommunications Network.jpg', caption="Telecommunications Customer Churn Exploration", use_column_width=True)
+# # Add the image
+# st.image('Images/Global Telecommunications Network.jpg', caption="Telecommunications Customer Churn Exploration", use_column_width=True)
 
 # Load the dataset and display descriptive statistics
 query = "SELECT * FROM dbo.LP2_Telco_churn_first_3000"
