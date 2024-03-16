@@ -382,13 +382,36 @@ def main():
 
     # # Display the home page content
     # home_page()
+    
+    # App Features
+    st.markdown("### **App Features** ###")
+    st.markdown("**Data Exploration:** Allows you to access data in a remote database via a connection")
+    st.markdown("**Dashboard:** Contains Data Visualisations")
+    st.markdown("**Predictions:** Allows you to make predictions in real time")
+
+
 
     # How to run the app
     st.markdown("### **How to Run the App** ###")
-    st.markdown("To run this app locally, make sure you have Python installed. Then, install Streamlit and the required dependencies by running the following command:")
+    st.markdown("To run this app locally, make sure you have Python installed. Then, install Streamlit and the required dependencies, and activate your virtual environment by running the following command:")
     st.code("pip install streamlit-authenticator")
+    st.code("virtual_env/Scripts/activate")
     st.markdown("After installing the dependencies, navigate to the directory containing the app file and run the following command:")
-    st.code("streamlit run app.py")
+    st.code("streamlit run Home.py")
+
+
+    # Machine Learning Integration
+    st.markdown("### **Machine Learning Integration** ###")
+    st.markdown("You have the option to select between two models for prediction")
+    st.markdown("Simple integration and user-friendly interface")
+    st.markdown("Save data to a database for future use")
+    st.markdown("Get probability of predictions")
+
+
+    # User Benefits
+    st.markdown("### **User Benefits** ###")
+    st.markdown("Make data-driven decisions effortlessly")
+    st.markdown("Harness the power of machine learning without the complexities")
 
     # Contact Information
     st.markdown("### **Contact Information** ###")
