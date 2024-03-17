@@ -1,42 +1,43 @@
-# Customer_Churn_Prediction_App
-This is data application that predicts customer churn at a telecommunications company
-Losing customers is a major cost for any organization. Customer churn, also known as customer attrition or customer turnover, is the percentage of customers who stop using your company’s product or service within a certain period of time.
-For example, if you started the year with 500 customers and ended with 480 customers, your customer churn rate would be 4%.
-If we could understand the reasons and the timing of customer churn with reasonable accuracy, it would greatly help the organization to plan and implement effective retention strategies.
+Customer Churn Prediction App
+Losing customers is a significant concern for any organization. Customer churn, also known as customer attrition or turnover, refers to the percentage of customers who stop using a company's product or service within a specific period. For instance, if a company starts the year with 500 customers and ends with 480, the churn rate would be 4%. Understanding the reasons and timing of customer churn can greatly assist organizations in devising effective retention strategies.
 
-This is a Classification project aimed at assisting a telecommunications company understand their data and find the life time value of each customer and know what factors affect the rate at which customers stop using their network.
+Introduction
+This data application focuses on predicting customer churn at a telecommunications company. The project has successfully developed robust machine learning models, and now the aim is to deploy these models for practical decision-making. Effective deployment is crucial for unlocking actionable insights and realizing the full impact of the models. Following the CRISP-DM framework, model deployment seamlessly integrates machine learning models into existing production environments, facilitating informed business decisions based on data.
 
+Project Focus
+The main focus of the project is to create a user-friendly Graphic User Interface (GUI) using Streamlit. This GUI will enable stakeholders without technical expertise to interact with the machine learning models effectively.
 
+Project Benefits
+Customizable GUI Components: Learn to craft flexible and user-friendly GUI components with Streamlit.
+Real-time Predictions: Deploy machine learning models using Streamlit for real-time predictions in practical scenarios.
+CRISP-DM Final Step: Embrace the industry-standard CRISP-DM framework to guide the data process from business understanding to model deployment.
+Data
+The dataset consists of 5000 records with attributes ranging from demographic information to service usage and churn status, hosted in a Microsoft SQL server.
 
-Elevate Your ML Models: From Development to Real-world Impact
+Project Structure
+Customer_Churn_Prediction_App
+├── data
+│
+├── notebook: P4 Customer Churn Prediction
+│   ├── 01_Exploratory_Data_Analysis.ipynb
+│   ├── 02_Preprocessing_and_Feature_Engineering.ipynb
+│   ├── 03_Model_Application.ipynb
+│   └── ...
+├── visuals
+│   ├── EDA-Correlation Matrix.png
+│   ├── Hyperparameter tuning results.png
+│   ├── Churn Distribution by Internet Service Types.png
+│   └── Churn Distribution by Contract Types.png
+├── README.md
+└── requirements.txt
+Notebook
+Explore detailed analyses in the notebook:
 
-You've successfully built robust machine learning models, but their true potential lies in deploying them for practical decision-making. Effective deployment is key to unlocking actionable insights and realizing the full impact of your models.
+01_Exploratory_Data_Analysis: In-depth exploration of sales data.
+02_Preprocessing_and_Feature_Engineering: Preprocessing steps and feature engineering.
+03_Model_Application: Application of One-Hot Encoding, Linear Regression, Hyperparameter Tuning, and Random Forests.
+Visuals
+Discover visual representations in the visuals folder, aiding in understanding complex patterns and trends.
 
-As an integral part of the CRISP-DM framework, model deployment seamlessly integrates your machine learning models into existing production environments, enabling informed business decisions based on data.
-
-
-Project Focus: Embedding Machine Learning models into a user-friendly interface such as Streamlit for use by third party stakeholders who don't have the technical knowledge to read a Jupyter notebook.
-
-
-Project Benefits:
-
-Customizable GUI Components: Develop the skills to craft flexible and user-friendly Graphic User Interface (GUI) components with Streamlit.
-
-Real-time Predictions: Deploy machine learning models using Streamlit, enabling real-time predictions for practical scenarios
-
-CRISP-DM Final Step: Learn to embrace the industry-standard CRISP-DM framework to guide your data process from business understanding to model deployment. 
-
-
-Skill Sets You'll Develop:
-
-1. Understanding Deployment: Explore the significance of model deployment in real-world applications.
-
-2. Saving Models for Deployment: Learn techniques for saving machine learning models optimized for deployment.
-
-3. Project Requirements: Understand the importance of creating clear and concise project requirement files.
-
-4. Streamlit Web App: Dive into creating a user-friendly web app using Streamlit.
-
-
-In this project, we take a hands-on approach, embedding our pre-built models into a Graphic User Interface (GUI). For detailed information and code examples, explore this
-    
+Requirements
+The necessary Python packages are outlined in 'requirements.txt'.

@@ -884,10 +884,7 @@ def main():
         probability_of_no = probability[0][0] * 100
         st.markdown(f"### The Customer will not Churn with a probability of {round(probability_of_no, 2)}% ")
 
-    # # Display current prediction history
-    # df = pd.read_csv("./data/History.csv")
-    # st.write("Current Prediction History:", df)
-    # Display session state
+    
     st.write(st.session_state)
 if __name__ == "__main__":
     main()
